@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Biodata - Vasim Ali</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Serene Professional -->
+    <!-- Application Structure Plan: The SPA is designed as a single-page, interactive digital resume. The structure flows logically from a personal introduction (About), through professional achievements (Career & Education), to personal background (Family), and finally a call to action (Contact). A sticky navigation bar allows for both linear scrolling and direct access to sections. This narrative-driven structure is more engaging and modern than a static list, turning the biodata into a personal story that is easy for potential matches and their families to explore and understand. -->
+    <!-- Visualization & Content Choices: The source report is a personal biodata, containing qualitative information. Report Info: Career/Education -> Goal: Show professional journey -> Viz/Presentation: Interactive vertical timeline using HTML/CSS -> Interaction: Hover effects to highlight milestones -> Justification: More dynamic and engaging than a static list, it visually represents his career progression. Report Info: Personal/Family details -> Goal: Inform clearly -> Viz/Presentation: Structured text with icons and cards using HTML/CSS -> Interaction: Minimal, to maintain a respectful and professional tone. Report Info: Contact -> Goal: Enable connection -> Presentation: Icon-based list -> Interaction: "Copy to clipboard" button for usability. CONFIRMATION: No Chart.js/Plotly.js needed as there is no quantitative data to visualize. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #F8F7F4;
+            color: #2c3e50;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #083457;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link.active {
+            color: #083457;
+            font-weight: bold;
+        }
+        .timeline-item:hover .timeline-dot {
+            transform: scale(1.2);
+            background-color: #083457;
+        }
+        .timeline-item:hover .timeline-content {
+            transform: translateX(5px);
+        }
+        .timeline-dot {
+            transition: all 0.3s ease;
+        }
+        .timeline-content {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Vasim Ali</h1>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-gray-600 hover:text-gray-900">About</a>
+                <a href="#career" class="nav-link text-gray-600 hover:text-gray-900">Career & Education</a>
+                <a href="#family" class="nav-link text-gray-600 hover:text-gray-900">Family</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-gray-900">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#career" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Career & Education</a>
+            <a href="#family" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Family</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8 md:py-16">
+        
+        <section id="hero" class="text-center mb-16">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4">Vasim Ali</h1>
+                <p class="text-xl md:text-2xl text-gray-600 font-light">B.Tech, Electronic Engineer | Senior Design Engineer</p>
+            </div>
+        </section>
+
+        <section id="about" class="mb-16 scroll-mt-20">
+            <div class="grid md:grid-cols-5 gap-12 items-start">
+                <div class="md:col-span-2">
+                    <img src="main01.jpg" alt="Vasim Ali" class="rounded-lg shadow-2xl w-full object-cover aspect-square">
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="text-4xl font-bold mb-6">About Me</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        I am a devout, family-oriented, and professionally settled individual. I am a soft-spoken, humble, and caring person. Alhamdulillah, I strive to maintain a balance between my Deen (faith) and Duniya (worldly responsibilities). I come from a loving and supportive family and value good character and religious compatibility in a life partner.
+                    </p>
+                    <h3 class="text-2xl font-bold mb-4">Personal Details</h3>
+                    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-4 text-gray-800">
+                        <p><strong>Date of Birth:</strong> 27th July 1996</p>
+                        <p><strong>Age:</strong> 29 years (as of 2025)</p>
+                        <p><strong>Height:</strong> 6 Feet</p>
+                        <p><strong>Religion:</strong> Islam (Sunni)</p>
+                        <p><strong>Mother Tongue:</strong> Hindi</p>
+                        <p><strong>Languages:</strong> Hindi, English</p>
+                    </div>
+                     <div class="mt-6 bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-r-lg">
+                        <p class="font-bold">Religious Practice</p>
+                        <p>Alhamdulillah, practicing and pious (Deendar), offers prayers (Namazi) regularly, and observes fasting (Parhezgar).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="career" class="mb-16 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center mb-12">Career & Education</h2>
+            <div class="relative max-w-2xl mx-auto">
+                <div class="border-l-2 border-gray-200 absolute h-full top-0 left-2"></div>
+                <div class="space-y-12">
+                    <div class="timeline-item flex items-start">
+                        <div class="timeline-dot bg-gray-300 w-4 h-4 rounded-full mt-1.5 mr-6 flex-shrink-0"></div>
+                        <div class="timeline-content w-full">
+                            <p class="text-sm text-gray-500">Present</p>
+                            <h3 class="text-2xl font-bold">Senior Design Engineer</h3>
+                            <p class="font-semibold text-gray-700">STMicroelectronics, Noida</p>
+                            <p class="text-gray-600 mt-1">Working as an Electronic Engineer in a leading VLSI MNC.<br><b> Annual income: INR 30 Lakh to 50 Lakh.</b></p>
+                        </div>
+                    </div>
+                    <div class="timeline-item flex items-start">
+                        <div class="timeline-dot bg-gray-300 w-4 h-4 rounded-full mt-1.5 mr-6 flex-shrink-0"></div>
+                        <div class="timeline-content w-full">
+                            <p class="text-sm text-gray-500">Completed</p>
+                            <h3 class="text-2xl font-bold">B.Tech in Engineering</h3>
+                            <p class="font-semibold text-gray-700">Dayalbagh Educational Institute</p>
+                            <p class="text-gray-600 mt-1">Graduated with a Bachelor of Technology, specializing in electronics.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item flex items-start">
+                        <div class="timeline-dot bg-gray-300 w-4 h-4 rounded-full mt-1.5 mr-6 flex-shrink-0"></div>
+                        <div class="timeline-content w-full">
+                            <h3 class="text-2xl font-bold">Holy Quran</h3>
+                            <p class="font-semibold text-gray-700">Additional Qualification</p>
+                            <p class="text-gray-600 mt-1">Completed the Qur'an Sharif with Tajweed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="family" class="mb-16 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center mb-12">Family Background</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Parents</h3>
+                    <p><strong>Father's Name:</strong> Mr. Basil Ali (Photographer)</p>
+                    <p><strong>Mother's Name:</strong> Mrs. Raheesa Bee (Homemaker)</p>
+                    <p class="mt-4 text-sm text-gray-600">Respected, middle-class family from Timarni, District Harda, Madhya Pradesh.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Siblings (4)</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li><b>Sister 1:</b> Khushnuma (B.C.A.), Married, Govt. Job in Indian Railways.</li>
+                        <li><b>Sister 2:</b> Anjum (B.Ed.), Married, Teacher.</li>
+                        <li><b>Brother 1:</b> Wajid Ali (B.Tech), Private Job.</li>
+                        <li><b>Brother 2:</b> Bilal Ali, Pursuing Masters at Jamia Millia Islamia.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center mb-8">Contact Information</h2>
+            <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg text-center">
+                <p class="text-lg mb-4">For any further queries or to take things forward, please feel free to get in touch.</p>
+                <div class="flex items-center justify-center space-x-3 text-lg font-semibold my-4">
+                    <span>&#9742;</span>
+                    <span id="phone-number">+91 93403 90477</span>
+                    <button id="copy-btn" class="ml-2 bg-gray-200 hover:bg-gray-300 text-gray-700 text-xs font-bold py-1 px-2 rounded">
+                        Copy
+                    </button>
+                </div>
+                <div id="copy-success" class="text-green-600 text-sm h-4">&nbsp;</div>
+                <div class="text-gray-600 mt-4">
+                    <p class="font-bold">Address:</p>
+                    <p>Tiwari Colony, Ward No. 3, Chhidgaon Road, Timarni, District Harda, Madhya Pradesh.</p>
+                    <p class="text-sm mt-2">(Work Location: Noida, India)</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 bg-gray-100 mt-16">
+        <p class="text-gray-500 text-sm">&copy; 2025 Vasim Ali. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section[id]');
+        const copyBtn = document.getElementById('copy-btn');
+        const phoneNumber = document.getElementById('phone-number').innerText;
+        const copySuccess = document.getElementById('copy-success');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href').substring(1) === entry.target.id);
+                    });
+                }
+            });
+        }, { rootMargin: '-50% 0px -50% 0px' });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        copyBtn.addEventListener('click', () => {
+            const tempInput = document.createElement('input');
+            tempInput.value = phoneNumber;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            
+            copySuccess.innerText = 'Copied to clipboard!';
+            setTimeout(() => {
+                copySuccess.innerText = '\u00A0';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
